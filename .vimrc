@@ -9,6 +9,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'uarun/vim-protobuf'
+Bundle 'sjl/gundo.vim'
 
 filetype plugin indent on
 syntax enable
@@ -22,6 +24,8 @@ colorscheme solarized
 
 set backspace=indent,eol,start
 
+
+
 "Shortcuts
 set showcmd
 map <leader>te :tabedit
@@ -29,6 +33,7 @@ map <leader>tn :tabnext<CR>
 map <leader>tp :tabprevious<CR>
 map <leader>tc :tabclose<CR>
 map <leader>f :NERDTreeToggle<CR>
+map <leader>u :GundoToggle<CR>
 
 "Indentation
 autocmd FileType javascript,html,css,php,htmldjango set ai
