@@ -23,8 +23,8 @@ endif
 colorscheme solarized
 
 set backspace=indent,eol,start
-
-
+set relativenumber
+set undofile
 
 "Shortcuts
 set showcmd
