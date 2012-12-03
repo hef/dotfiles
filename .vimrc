@@ -11,6 +11,7 @@ Bundle 'ervandew/supertab'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'uarun/vim-protobuf'
 Bundle 'sjl/gundo.vim'
+Bundle 'Rip-Rip/clang_complete'
 
 filetype plugin indent on
 syntax enable
