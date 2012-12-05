@@ -12,6 +12,8 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'uarun/vim-protobuf'
 Bundle 'sjl/gundo.vim'
 Bundle 'Rip-Rip/clang_complete'
+Bundle "glsl.vim"
+Bundle "scons.vim"
 
 filetype plugin indent on
 syntax enable
@@ -51,3 +53,8 @@ au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 "sparkup tricks
 au FileType html set ft=htmldjango
 au Filetype htmldjango runtime! ftplugin/html/sparkup.vim
+
+"glsl.vim
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
+"scons.vim
+au BufNewFile,BufRead SCons* set filetype=scons
