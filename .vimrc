@@ -14,6 +14,14 @@ Bundle 'sjl/gundo.vim'
 Bundle 'Rip-Rip/clang_complete'
 Bundle "glsl.vim"
 Bundle "scons.vim"
+Bundle 'davidhalter/jedi-vim'
+
+"Trying out
+"Bundle 'tpope/vim-fugitive'
+"set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+"Bundle 'scrooloose/syntastic'
+"let g:syntastic_cpp_compiler = 'clang++'
+"let g:syntastic_cpp_compiler_options = ' -Weverything'
 
 filetype plugin indent on
 syntax enable
@@ -58,3 +66,4 @@ au Filetype htmldjango runtime! ftplugin/html/sparkup.vim
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
 "scons.vim
 au BufNewFile,BufRead SCons* set filetype=scons
+
