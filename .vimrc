@@ -11,6 +11,9 @@ Bundle 'ervandew/supertab'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'uarun/vim-protobuf'
 Bundle 'sjl/gundo.vim'
+Bundle "bartman/git-wip", {'rtp': 'vim'}
+
+"Testing out plugins
 
 filetype plugin indent on
 syntax enable
@@ -23,8 +26,8 @@ endif
 colorscheme solarized
 
 set backspace=indent,eol,start
-
-
+set relativenumber
+set undofile
 
 "Shortcuts
 set showcmd
@@ -50,3 +53,5 @@ au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 "sparkup tricks
 au FileType html set ft=htmldjango
 au Filetype htmldjango runtime! ftplugin/html/sparkup.vim
+"NerdTreeConfig
+let NERDTreeIgnore=['\.pyc$', '\~$']
