@@ -12,6 +12,9 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'uarun/vim-protobuf'
 Bundle 'sjl/gundo.vim'
 Bundle "bartman/git-wip", {'rtp': 'vim'}
+Bundle 'Rip-Rip/clang_complete'
+Bundle "glsl.vim"
+Bundle "scons.vim"
 
 "Testing out plugins
 
@@ -55,3 +58,8 @@ au FileType html set ft=htmldjango
 au Filetype htmldjango runtime! ftplugin/html/sparkup.vim
 "NerdTreeConfig
 let NERDTreeIgnore=['\.pyc$', '\~$']
+
+"glsl.vim
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
+"scons.vim
+au BufNewFile,BufRead SCons* set filetype=scons

@@ -1,4 +1,4 @@
-dotfiles
+Dotfiles
 ========
 
-My home directory dotfiles
+These are dotfiles I find significant enough to share between my platforms.
