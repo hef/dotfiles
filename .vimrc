@@ -72,3 +72,7 @@ au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
 "scons.vim
 au BufNewFile,BufRead SCons* set filetype=scons
 
+if exists('+colorcolumn')
+	set colorcolumn=80
+endif
+
