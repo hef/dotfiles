@@ -7,22 +7,20 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
-Bundle 'ervandew/supertab'
+"Bundle 'ervandew/supertab'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'uarun/vim-protobuf'
 Bundle 'sjl/gundo.vim'
 Bundle "bartman/git-wip", {'rtp': 'vim'}
-Bundle 'Rip-Rip/clang_complete'
+"Bundle 'Rip-Rip/clang_complete'
 Bundle "glsl.vim"
 Bundle "scons.vim"
-Bundle 'davidhalter/jedi-vim'
+"Bundle 'davidhalter/jedi-vim'
+Bundle 'Valloric/YouCompleteMe'
 
 "Trying out
-"Bundle 'tpope/vim-fugitive'
-"set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-"Bundle 'scrooloose/syntastic'
-"let g:syntastic_cpp_compiler = 'clang++'
-"let g:syntastic_cpp_compiler_options = ' -Weverything'
+Bundle "scrooloose/syntastic"
+
 
 "Testing out plugins
 
@@ -39,6 +37,7 @@ colorscheme solarized
 set backspace=indent,eol,start
 set relativenumber
 set undofile
+set undodir=~/.vim/undodir
 
 "Shortcuts
 set showcmd
@@ -76,3 +75,8 @@ if exists('+colorcolumn')
 	set colorcolumn=80
 endif
 
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set smarttab
+set expandtab
