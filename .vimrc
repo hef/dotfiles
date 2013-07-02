@@ -49,6 +49,7 @@ map <leader>tp :tabprevious<CR>
 map <leader>tc :tabclose<CR>
 map <leader>f :NERDTreeToggle<CR>
 map <leader>u :GundoToggle<CR>
+nmap ; :
 
 "Indentation
 autocmd FileType javascript,html,css,php,htmldjango set ai
