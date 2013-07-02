@@ -17,9 +17,11 @@ Bundle "glsl.vim"
 Bundle "scons.vim"
 "Bundle 'davidhalter/jedi-vim'
 Bundle 'Valloric/YouCompleteMe'
+Bundle "scrooloose/syntastic"
+Bundle 'tpope/vim-fugitive'
 
 "Trying out
-Bundle "scrooloose/syntastic"
+Bundle 'myhere/vim-nodejs-complete'
 
 
 "Testing out plugins
@@ -60,6 +62,10 @@ autocmd FileType htmldjango set omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 au FileType python setlocal tabstop=8 expandtab shiftwidth=4 softtabstop=4
 
+"syntastic
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_check_on_open=1
+
 "sparkup tricks
 au FileType html set ft=htmldjango
 au Filetype htmldjango runtime! ftplugin/html/sparkup.vim
@@ -68,6 +74,7 @@ let NERDTreeIgnore=['\.pyc$', '\~$']
 
 "glsl.vim
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl
+
 "scons.vim
 au BufNewFile,BufRead SCons* set filetype=scons
 
