@@ -1,0 +1,7 @@
+
+###-tns-completion-start-###
+if [ -f /Users/hef/.tnsrc ]; then 
+    source /Users/hef/.tnsrc 
+fi
+###-tns-completion-end-###
+
