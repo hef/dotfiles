@@ -1,3 +1,4 @@
 call plug#begin(stdpath('data') . '/plugged')
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-sensible'
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
 call plug#end()
