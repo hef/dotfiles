@@ -5,6 +5,7 @@ These are dotfiles I find significant enough to share between my platforms.
 
 To get this to actually work:
 
+    sudo aptitude install cmake python-dev
     git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
     vim +BundleInstall +qall
     cd ~/.vim/bundle/YouCompleteMe
